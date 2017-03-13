@@ -11,7 +11,7 @@ export class LineMenuStyleComponent implements OnInit {
 
 	public _data:any;
 	public _active:any;
-
+	public _config:any;
 
 	public activated(item:any){
 		console.log(item);
@@ -22,6 +22,12 @@ export class LineMenuStyleComponent implements OnInit {
 	public set active(active:any){
 		this._active = active;
 	}
+
+	@Input()
+	public set config(config:any){
+		this._config = config;
+	}
+
 
 	@Input()
 	public set data(data:any){

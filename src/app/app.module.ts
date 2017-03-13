@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { LineMenuStyleComponent } from './line-menu-style/line-menu-style.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LineMenuStyleComponent
   ],
   imports: [
     BrowserModule,

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+	public data:Array<any> = [
+		{"title":"Home","link":"#"},
+		{"title":"Gallery","link":"#"},
+		{"title":"Portfolio","link":"#"},
+		{"title":"Clients","link":"#"},
+		{"title":"Contacts","link":"#"},
+	]
 }

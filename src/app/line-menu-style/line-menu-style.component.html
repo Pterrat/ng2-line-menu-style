@@ -2,7 +2,8 @@
 	<nav class="menu" [class]="_config.class">
 		<ul class="menu__list">
 			<li (click)="activated(item)" class="menu__item" *ngFor="let item of _data" [class]="_active == item ? 'menu__item--current menu__item' : 'menu__item'">
-				<a [href]="item.link" [style.color]="_config.primaryColor"  class="menu__link">{{item.title}}</a>
+				<a *ngIf="item.link != ''" [href]="item.link" [style.color]="_config.primaryColor"  class="menu__link">{{item.title}}</a>
+				<a *ngIf="item.link == ''" [style.color]="_config.primaryColor"  class="menu__link">{{item.title}}</a>
 			</li>
 			<li class="menu__line" [style.background]="_config.primaryColor"></li>
 		</ul>
